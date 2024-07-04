@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.black-document {
+    height: 100vh;  
+    width: 100%;
+    background-color: #171717; /* Use hexadecimal for colors */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.three-dots {
+    font-size: 2rem;
+    color: #ffffff; /* Use hexadecimal for colors */
+    position: absolute;
+    top: 1%;
+    left: 4%; 
+    cursor: pointer;
+}
+
+.three-dots.hidden {
+    display: none;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;    
+    transition: width 0.5s; /* Specify which property is being transitioned */
+    background-color: #ffa500; /* Use hexadecimal for colors */
+}
+
+.cut {
+    position: absolute;
+    top: 1.25rem; /* 20px converted to rem */
+    right: 1.25rem; /* 20px converted to rem */
+    font-size: 2.5rem; /* Use rem units for font sizes */
+    color: #ffffff; /* Use hexadecimal for colors */
+    cursor: pointer;
+}
+
+.nav ul {
+    text-align: center;
+    height: 100vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; /* 20px converted to rem */
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem; /* Use rem units for font sizes */
+    color: #ffffff; /* Use hexadecimal for colors */
+}
